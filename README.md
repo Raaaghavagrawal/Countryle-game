@@ -25,5 +25,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## By Raghav!
  (You can always check out my socials at : [https://linktr.ee/Raghav](https://t.co/UNpOGOnq1V))
 
-(a pfun project!) <br>
+(a fun project!) <br>
 Made On 11.12.24 <3
