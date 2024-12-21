@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#home-btn-fixed {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#home-btn-fixed:hover {
+    background-color: #000000;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.difficulty {
+    margin: 10px 0;
+}
+
+.input-container {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 10px;
+    width: 85%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.word-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.letter-box {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.correct-letter {
+    background-color: green;
+    color: white;
+}
+
+.wrong-position {
+    background-color: yellow;
+    color: black;
+}
+
+.wrong-letter {
+    background-color: grey;
+    color: white;
+}
+
+.word-row .letter-box:last-child {
+    margin-right: 0;
+}
+
+.hint {
+    margin-bottom: 20px;
+}
+
+.result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
