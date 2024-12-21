@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag Guessing Adventure</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-world map-clouds-16.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-900 min-h-screen flex items-center justify-center">
+    <!-- Home Button -->
+    <div id="home-btn-fixed" class="fixed top-4 left-4 z-10">
+      <button id="home-btn-fixed-element" class="home-btn bg-blue-500 text-white p-2 rounded-md shadow-md hover:bg-blue-600 focus:outline-none" aria-label="Go to Home Page">Home</button>
+    </div>
+
+    <div id="thanks-screen" class="w-full max-w-md bg-white rounded-xl shadow-2xl p-8 text-center">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Thanks For Visiting!</h1>
+        <p class="text-sm text-gray-700 mt-6">
+          Welcome to Country Wordle, an exciting and educational variation of the classic Wordle game. In this version, instead of guessing random words, your challenge is to identify the names of countries from around the world. The idea for this game came to me after seeing a flag-guessing game on a repository by <a href="https://t.co/zt7eSalNCr" target="_blank" class="text-blue-500 hover:underline">Shivasnh Pratap Singh</a>, paired with my familiarity with the Wordle concept. This inspired me to create a unique game where players guess country names. I was also fortunate to receive assistance from my friend during development, and you can explore his social media as well. Special thanks to <a href="https://t.co/tPlS3F4Zoi" target="_blank" class="text-blue-500 hover:underline">Akshat Omar</a> for his invaluable guidance throughout the process.<br><br>
+           
+          If you like the project, don’t forget to star this repository on GitHub!<br>
+        </p>
+      </div>
+      
+       <a href="https://github.com/Raaaghavagrawal/Countryle-game" target="_blank">
+        <button id="go-to-repo-btn" class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition duration-300 mt-4">
+          Star My Repo!
+        </button>
+      </a>
+      <p class="text-sm text-gray-500 mt-6">Made by Shivansh :)</p>
+
+    <!-- Subtle Button with Linktree Logo and Twitter Icon -->
+    <div class="flex justify-center items-center space-x-4 mt-4">
+        <a href="https://t.co/UNpOGOnq1V" target="_blank">
+          <button class="text-gray-700 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linktree-logo-icon.png" alt="Linktree Logo" class="h-8 w-8 inline-block" />
+          </button>
+        </a>
+        <a href="https://x.com/Raghavvv23" target="_blank">
+          <button class="text-gray-700 py-3 rounded-lg hover:bg-gray-100 transition duration-300">
+            <img src="https://img.freepik.com/premium-vector/twitters-new-2024-x-logo-white-background-vector_883031-10.jpg?semt=ais_hybrid" alt="Twitter Logo" class="h-8 w-8 inline-block" />
+          </button>
+        </a>
+    </div>
+
+    <script>
+      // Ensure DOM content is fully loaded before interacting with elements
+      document.addEventListener('DOMContentLoaded', function () {
+        // Home Button functionality
+        const homeButton = document.getElementById('home-btn-fixed-element');
+        
+        homeButton.addEventListener('click', function() {
+          console.log("Home button clicked!");  // Debugging line, check if it's working
+          // Reset any game state here, if needed
+          localStorage.removeItem('gameState');  // Example of clearing game progress
+
+          // Redirect to the home/landing page
+          window.location.href = 'index.html';  // Adjust this URL if needed
+        });
+      });
+    </script>
+  </body>
+</html>

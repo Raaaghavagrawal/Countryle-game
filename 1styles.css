@@ -1,0 +1,37 @@
+/* Smooth sliding and fade-in-out transition effects */
+#game-container {
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease;
+}
+
+#game-over-page {
+    transition: transform 0.7s ease-in-out, opacity 0.5s ease;
+    opacity: 0;  /* Start as hidden */
+    transform: translateX(100%);  /* Start off to the right */
+}
+
+/* Sliding animation for when game container moves to the right */
+.slide-out {
+    transform: translateX(-100%);
+    opacity: 0; /* Fade out the game container */
+}
+
+/* Add slide-in effect for Game Over screen */
+.slide-in {
+    transform: translateX(0);
+    opacity: 1; /* Fade in the game-over screen */
+}
+
+/* Smooth fade effect for showing the hint 
+#hint {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}*/
+
+#hint.visible {
+    opacity: 1;
+}
+
+.w-10 {
+    transition: background-color 0.3s ease-in-out;
+}
+
